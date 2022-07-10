@@ -1,6 +1,6 @@
 import { Application } from 'https://deno.land/x/oak/mod.ts'
 
-const app = Application()
+const app = new Application()
 
 app.use( (ctx) => {
     ctx.response.body = 'Hello world 3'
