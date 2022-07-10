@@ -1,7 +1,6 @@
 /** @jsx h */
 import { h } from "preact";
 import { useState, useEffect } from "preact/hooks";
-import styled from "https://esm.sh/styled-components";
 
 type Message = {
     text: string
@@ -13,6 +12,7 @@ export default function Home() {
     const getMessages = async () => {
         const res = await fetch('https://dfjhd-deno-chat.deno.dev/messages')
         const m = await res.json()
+        console.log('---', m)
         setMessages(m)
     }
 
@@ -26,12 +26,9 @@ export default function Home() {
         ))
     }
     return (
-        <MessageList>
+        <div>
             {jsx}
-        </MessageList>
+        </div>
     );
 }
 
-const MessageList = styled.div`
-    background-color: yellow;
-`
