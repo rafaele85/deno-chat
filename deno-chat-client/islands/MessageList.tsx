@@ -12,7 +12,7 @@ const MessageList = () => {
 
     const getMessages = async () => {
         console.log('---starting fetch')
-        const res = await fetch('https://dfjhd-deno-chat.deno.dev/messages')
+        const res = await fetch('https://dfdf-api-deno-chat.deno.dev/messages')
         const m = await res.json()
         setMessages(m)
     }
