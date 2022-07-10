@@ -1,6 +1,6 @@
 import { Application, Router } from 'https://deno.land/x/oak/mod.ts'
 
-const messages = []
+const messages = [{text: 'test1'}]
 
 const router = new Router()
 

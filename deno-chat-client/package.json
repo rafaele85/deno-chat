@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@types/styled-components": "^5.1.25",
+    "typescript": "^3.9.5",
+    "typescript-deno-plugin": "^1.31.0"
+  },
+  "dependencies": {
+    "styled-components": "^5.3.5"
+  }
+}
